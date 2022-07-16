@@ -4,6 +4,7 @@ theshell=$(echo $SHELL | cut -d'/' -f 3)
 getlastip=$(last | head -n 2 | tail -1)
 lastip=$(echo $getlastip | cut -d' ' -f 3)
 lastdate=$(echo $getlastip | cut -d' ' -f 4,5,6,7,8,9)
+clear
 echo ""
 echo -e "  \\e[0;41mSYSTEM INFORMATION\e[0m"
 echo -e " \e[2m Hostname \t: \e[0m\e[1m${thehostname^^} \e[0m"
